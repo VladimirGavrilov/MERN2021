@@ -4,7 +4,8 @@
   "description": "site MERN Vladimir Gavrilov",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "server": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,13 @@
   "bugs": {
     "url": "https://github.com/VladimirGavrilov/MERN2021/issues"
   },
-  "homepage": "https://github.com/VladimirGavrilov/MERN2021#readme"
+  "homepage": "https://github.com/VladimirGavrilov/MERN2021#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.12.3"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "nodemon": "^2.0.7"
+  }
 }
