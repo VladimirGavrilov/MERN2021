@@ -5,7 +5,7 @@ const User = require('../models/User')
 const router = Router()
 
 // /api/auth/register
-router.post('register',
+router.post('/register',
     [
         check('email', 'Некорректный email').isEmail(),
         check('password', 'Минимальная длина пароля 6 символов')
@@ -41,9 +41,29 @@ router.post('register',
 })
 
 // /api/auth/login
-router.post('login', async (req, res) => {
+router.post('/login',
+            [
 
-})
+
+            ],
+            async (req, res) => {
+            try {
+                const errors = validationResult(req)
+                if (errors.isEmpty()) {
+                    return res.status(400).json({
+                        errors: errors.array(),
+                        message: 'Некоректные данные при входе в систему'
+                    })
+                }
+                
+
+
+
+            } catch (e) {
+                    res.status(500).json({ messege: 'Чтото пошло не так...' })
+            }
+
+    })
 module.exports = router
 
 
