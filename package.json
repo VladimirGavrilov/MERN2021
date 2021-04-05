@@ -1,0 +1,23 @@
+{
+  "name": "mern2021",
+  "version": "0.0.1",
+  "description": "site MERN Vladimir Gavrilov",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VladimirGavrilov/MERN2021.git"
+  },
+  "keywords": [
+    "mern",
+    "react"
+  ],
+  "author": "Vladimir Gavrilov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VladimirGavrilov/MERN2021/issues"
+  },
+  "homepage": "https://github.com/VladimirGavrilov/MERN2021#readme"
+}
